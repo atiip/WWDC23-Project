@@ -65,7 +65,7 @@ struct ClothesView: View {
                 Button(action: {
                     
                     }, label: {
-                        NavigationLink(destination: PantsView(isSelectedClothes: $isSelectedClothes, isHat: $isHat, isClothes: isClothes)){
+                        
                            
                             Text("Next")
                                 .frame(width: 500)
@@ -75,7 +75,7 @@ struct ClothesView: View {
                                 .background(Color("bg-secondary-btn"))
                                 .cornerRadius(16)
                                 .shadow(color: Color.black.opacity(0.5), radius: 4, x: 4, y: 4)
-                        }
+                        
                     }).padding(EdgeInsets(top: 0, leading: 12, bottom: 36, trailing: 8))
            
                 }
