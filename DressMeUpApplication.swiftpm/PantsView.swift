@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ClothesView: View {
+struct PantsView: View {
     @State private var imageWidth: CGFloat = 0
     @State private var imageHeight: CGFloat = 0
     @State var x1: CGFloat = 840
@@ -26,8 +26,9 @@ struct ClothesView: View {
     
     @Binding var isSelectedClothes: String
     @Binding var isHat: String
-    
     @State var isClothes = "putih"
+    
+    
     
     
     let items = ["topi-putih", "topi-hitam", "baju-putih", "baju-hitam", "baju-hitam-panjang", "celana-putih", "celana-biru", "celana-hitam-panjang"]
@@ -65,7 +66,7 @@ struct ClothesView: View {
                 Button(action: {
                     
                     }, label: {
-                        NavigationLink(destination: PantsView(isSelectedClothes: $isSelectedClothes, isHat: $isHat, isClothes: $isClothes)){
+                        NavigationLink(destination: finalView()){
                            
                             Text("Next")
                                 .frame(width: 500)
