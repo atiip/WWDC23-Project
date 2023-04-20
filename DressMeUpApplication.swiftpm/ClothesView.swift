@@ -65,7 +65,7 @@ struct ClothesView: View {
                 Button(action: {
                     
                     }, label: {
-                        NavigationLink(destination: PantsView(isSelectedClothes: $isSelectedClothes, isHat: $isHat, isClothes: $isClothes)){
+                        NavigationLink(destination: PantsView(isSelectedClothes: $isSelectedClothes, isHat: $isHat, isClothes: isClothes)){
                            
                             Text("Next")
                                 .frame(width: 500)
